@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://docagenda.up.railway.app/"
+  "homepage": "https://docagenda.up.railway.app/",
   "dependencies": {
     "@fullcalendar/core": "^6.1.14",
     "@fullcalendar/daygrid": "^6.1.14",
