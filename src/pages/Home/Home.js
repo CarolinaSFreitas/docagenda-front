@@ -7,6 +7,7 @@ const Home = () => {
   const { auth } = useAuth();
   const user = localStorage.getItem("user");
   const userData = user ? JSON.parse(user) : null;
+  // eslint-disable-next-line no-unused-vars
   const isAssistente = userData?.isAssistente;
   return (
     <div className="home">
@@ -14,8 +15,8 @@ const Home = () => {
 
       {auth &&
           userData &&
-          isAssistente !== null &&
-          !isAssistente ? (
+          userData.isAssistente !== null &&
+          !userData.isAssistente ? (
             <div>
               <p>
                 A DocAgenda busca melhorar a organização e a eficácia do trabalho dos
@@ -35,8 +36,8 @@ const Home = () => {
             </div>
 
         ) : userData &&
-        isAssistente !== null &&
-        isAssistente ? (
+        userData.isAssistente !== null &&
+        userData.isAssistente ? (
             <div>
               <p>
               Para começar, selecione o médico que deseja gerenciar. Após a seleção, você poderá visualizar e atualizar a agenda de compromissos, garantir que os horários estejam organizados e ajudar a otimizar o tempo do médico e dos pacientes.
