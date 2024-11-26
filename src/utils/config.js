@@ -1,5 +1,5 @@
-export const api = "http://localhost:3333/api";
-export const uploads = "http://localhost:3333/uploads";
+export const api = proccess.env.API_URL;
+export const uploads = proccess.env.UPLOAD_URL;
 
 export const requestConfig = (method, data, token = null, image = null) => {
   let config;
