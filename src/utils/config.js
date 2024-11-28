@@ -1,5 +1,5 @@
-export const api = "https://docagenda-projeto-api.up.railway.app"
-export const uploads = "https://docagenda-projeto-api.up.railway.app"
+export const api = "https://docagenda-projeto-api.up.railway.app/api"
+export const uploads = "https://docagenda-projeto-api.up.railway.app/uploads"
 
 export const requestConfig = (method, data, token = null, image = null) => {
   let config;
